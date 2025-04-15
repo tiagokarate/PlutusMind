@@ -1,0 +1,11 @@
+random_forest_opinion,lstm_opinion,gpt_opinion,gpt_justification,final_vote,plutus_treasury_value
+BUY,BUY,BUY,"Tendência de alta identificada",BUY,10100.00
+SELL,SELL,BUY,"Correção temporária esperada",SELL,9999.00
+HOLD,BUY,BUY,"Momento de acumulação",BUY,10050.25
+SELL,HOLD,HOLD,"Mercado em consolidação",HOLD,10050.25
+BUY,SELL,SELL,"Sinais técnicos negativos",SELL,9950.75
+HOLD,HOLD,BUY,"Oportunidade de entrada",BUY,10000.50
+SELL,BUY,SELL,"Divergência entre indicadores",SELL,9900.25
+BUY,BUY,HOLD,"Suporte forte identificado",BUY,9950.75
+HOLD,SELL,SELL,"Resistência significativa",SELL,9900.00
+BUY,BUY,BUY,"Momento de compra claro",BUY,10000.00 

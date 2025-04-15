@@ -1,0 +1,302 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+
+  body {
+    @apply font-satoshi font-normal text-base text-body bg-whiten relative z-1;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* TailAdmin Colors */
+.bg-meta-1 {
+  background-color: #DC3545;
+}
+
+.bg-meta-2 {
+  background-color: #EFF2F7;
+}
+
+.bg-meta-3 {
+  background-color: #10B981;
+}
+
+.bg-meta-4 {
+  background-color: #313D4A;
+}
+
+.text-meta-1 {
+  color: #DC3545;
+}
+
+.text-meta-3 {
+  color: #10B981;
+}
+
+.fill-meta-1 {
+  fill: #DC3545;
+}
+
+.fill-meta-3 {
+  fill: #10B981;
+}
+
+.bg-whiter {
+  background-color: #F5F7FD;
+}
+
+/* TailAdmin Shadows */
+.shadow-default {
+  box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.07);
+}
+
+.shadow-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+/* TailAdmin Borders */
+.border-stroke {
+  border-color: #E2E8F0;
+}
+
+.dark .dark\:border-strokedark {
+  border-color: #2E3A47;
+}
+
+/* TailAdmin Sizes */
+.w-11\.5 {
+  width: 2.875rem;
+}
+
+.h-11\.5 {
+  height: 2.875rem;
+}
+
+.max-w-45 {
+  max-width: 11.25rem;
+}
+
+.pt-7\.5 {
+  padding-top: 1.875rem;
+}
+
+/* TailAdmin Text */
+.text-title-md {
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+}
+
+/* Animations */
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* Transitions */
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-linear {
+  transition-timing-function: linear;
+}
+
+/* Z-index */
+.z-999 {
+  z-index: 999;
+}
+
+.z-9999 {
+  z-index: 9999;
+}
+
+@layer components {
+  .dark .dark\:bg-boxdark {
+    --tw-bg-opacity: 1;
+    background-color: rgb(36 41 51 / var(--tw-bg-opacity));
+  }
+
+  .dark .dark\:bg-meta-4 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(40 46 56 / var(--tw-bg-opacity));
+  }
+
+  .dark .dark\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .dark .dark\:border-strokedark {
+    --tw-border-opacity: 1;
+    border-color: rgb(45 51 62 / var(--tw-border-opacity));
+  }
+
+  .text-meta-1 {
+    --tw-text-opacity: 1;
+    color: rgb(220 53 69 / var(--tw-text-opacity));
+  }
+
+  .text-meta-3 {
+    --tw-text-opacity: 1;
+    color: rgb(16 185 129 / var(--tw-text-opacity));
+  }
+
+  .bg-meta-2 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(237 242 247 / var(--tw-bg-opacity));
+  }
+
+  .text-title-md {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .fill-meta-3 {
+    fill: rgb(16 185 129);
+  }
+
+  .fill-meta-1 {
+    fill: rgb(220 53 69);
+  }
+
+  .fill-primary {
+    fill: rgb(59 130 246);
+  }
+
+  .bg-whiter {
+    --tw-bg-opacity: 1;
+    background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+  }
+
+  .shadow-card {
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .shadow-default {
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.08);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+}
+
+/* TailAdmin Specific Styles */
+.dark .dark\:bg-boxdark {
+  background-color: #24303F;
+}
+
+.dark .dark\:bg-boxdark-2 {
+  background-color: #1A222C;
+}
+
+.dark .dark\:bg-meta-4 {
+  background-color: #363F4E;
+}
+
+.dark .dark\:border-strokedark {
+  border-color: #2E3A47;
+}
+
+.apex-chart .apexcharts-tooltip {
+  @apply bg-white dark:bg-boxdark !important;
+  @apply border-gray-100 dark:border-strokedark !important;
+  @apply text-gray-700 dark:text-gray-300 !important;
+}
+
+.apex-chart .apexcharts-tooltip-title {
+  @apply bg-gray-100 dark:bg-meta-4 !important;
+  @apply border-gray-100 dark:border-strokedark !important;
+}
+
+.apex-chart .apexcharts-xaxis-label,
+.apex-chart .apexcharts-yaxis-label {
+  @apply fill-gray-600 dark:fill-gray-400 !important;
+}
+
+.apex-chart .apexcharts-legend-text {
+  @apply text-gray-700 dark:text-gray-300 !important;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  @apply w-1.5;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-200 dark:bg-boxdark-2;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-meta-4;
+  @apply rounded-full;
+}
+
+/* Transitions */
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
